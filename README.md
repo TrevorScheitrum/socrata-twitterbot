@@ -1,1 +1,1 @@
-# socratta-twitterbot
+# socrata-twitterbot
