@@ -1,0 +1,15 @@
+DateTime==4.0.1
+enum34==1.1.3
+idna==2.1
+ipaddress==1.0.16
+oauthlib==1.0.3
+pyasn1==0.1.9
+pycparser==2.14
+pytz==2015.7
+requests==2.9.1
+requests-oauthlib==0.6.1
+simplejson==3.8.2
+six==1.10.0
+twython==3.3.0
+urllib3==1.15.1
+zope.interface==4.1.3
