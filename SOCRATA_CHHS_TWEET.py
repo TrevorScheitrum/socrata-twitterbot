@@ -51,6 +51,7 @@ else:
 
 today=datetime.datetime.today()
 monday=today - datetime.timedelta(days=today.weekday())
+sunday=monday + datetime.timedelta(6)
 final_list=[]
 newdx={}
 ignorelist=['k9fb-stqc','rpkf-ugbp','i7wi-ei4m','emt8-tzcf']
@@ -69,7 +70,7 @@ for i in j:
         days_created =today-created
         days_modified=today-modified
         
-        if days_modified.days<=1 and i['identifier'] not in ignorelist: #ignore catalog dataset
+        if days_modified.days > 6 and i['identifier'] not in ignorelist: #ignore catalog dataset
             #print "created",days_created.days,"days ago"
             #print "modified",days_modified.days,"days ago"
             #print i['title']
