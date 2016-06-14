@@ -69,17 +69,17 @@ for i in j:
 
         days_created =today-created
         days_modified=today-modified
-        
+        print "days modified: " + str(days_modified.days)
         if days_modified.days > 6 and i['identifier'] not in ignorelist: #ignore catalog dataset
             #print "created",days_created.days,"days ago"
             #print "modified",days_modified.days,"days ago"
             #print i['title']
             #print "tags:",i['keyword'],"\n" #unicode, raw string
-            
+            print "appending to list"
             unified=i['keyword'].replace(';',',')
             strlist=unified.split(',')
             
-            print i['webService'],"\n",i['title'], "\ncreated on:",created,"\nupdated on:",modified
+            #print i['webService'],"\n",i['title'], "\ncreated on:",created,"\nupdated on:",modified
             
             if created==modified:
                 final_list.append({'id':i['identifier'],'title':i['title'],'tag':strlist,'status':'new'})
